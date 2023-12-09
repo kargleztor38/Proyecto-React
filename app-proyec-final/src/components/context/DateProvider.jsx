@@ -4,7 +4,7 @@ import { db } from "../../config/Firebase";
 import { DateContext } from "./DateContext";
 
 export const DateProvider = ({ children }) => {
-    // LLamado a los productos de firebase y su organización para facilitar su uso
+    // LLamado a los productos de firebase y su organización para facilitar su uso en toda la aplicación
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
@@ -16,9 +16,16 @@ export const DateProvider = ({ children }) => {
     }, []);
 
     // Lógica del carrito
+    const [cart, setCart] = useState([])
+    
+    // Función para agregar productos al carrito
+    const including = ( item) => {
+        setCart([...cart, {item}])
+    }
+    
 
     return (
-        <DateContext.Provider value={{ products }}>
+        <DateContext.Provider value={{ products, including, cart, setCart }}>
             {children}
         </DateContext.Provider>
     );

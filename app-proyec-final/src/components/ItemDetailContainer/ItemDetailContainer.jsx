@@ -10,7 +10,7 @@ export const ItemDetailContainer = () => {
 
 	useEffect(() => {
 		const findForId = (id) => {
-			return products.find((prod) => prod.id == id);
+			return products.find(prod => prod.id === id);
 		};
 		setProductId(findForId(id));
 	}, [id, products]);

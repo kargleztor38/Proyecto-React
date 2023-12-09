@@ -1,7 +1,22 @@
+import { useContext, useState } from "react"
 import { ItemCount } from "../ItemCount/ItemCount"
 import './ItemDetail.css'
+import { Link } from "react-router-dom"
+import { DateContext } from "../context/DateContext"
 
-export const ItemDetail = ({ name, precio, img, stock, category, description }) => {
+
+export const ItemDetail = ({ id, name, precio, img, stock, category, description }) => {
+    const [stateQuantity, setStateQuantity] = useState(0)
+    const { including } = useContext(DateContext)
+
+    const handleAdd = ( quantity ) => {
+        setStateQuantity(quantity)
+        const item = {
+            id, name, precio, quantity
+        }
+        including(item)
+    }
+
     return (
         <article className="detail container">
         <header>
@@ -17,7 +32,11 @@ export const ItemDetail = ({ name, precio, img, stock, category, description }) 
             <p className="detail-p">Stock: {stock}</p>
         </section>
         <footer>
-            <ItemCount stock={stock} />
+            {
+                stateQuantity > 0 
+                ? <Link to='/cart' className="compra">Finalizar Compra</Link>
+                : <ItemCount stock={stock}  onAdd={handleAdd} />
+            }
         </footer>
         </article>
     )
