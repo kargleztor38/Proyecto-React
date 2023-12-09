@@ -1,0 +1,46 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.navLinkContainer {
+    display: flex;
+    justify-content: center;
+    flex-basis: 60%;
+    gap: 50px;
+}
+
+h2 {
+    color: black;
+    font-size: 33px;
+    font-weight: 700;
+}
+
+.LinkContainer {
+    color: black;
+    flex-basis: 16%;
+    text-align: end;
+}
+
+.navLink {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.navLinkCart {
+    font-size: 2rem;
+}
+
+span {
+    padding: 3px 6px;
+    border-radius: 50%;
+    background-color: rgb(255, 185, 80);
+    font-size: 17px;
+    position: relative;
+    bottom: 20px;
+    right: 5px;
+}

@@ -1,0 +1,12 @@
+.ItemListContainer {
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.title {
+    text-align: center;
+}

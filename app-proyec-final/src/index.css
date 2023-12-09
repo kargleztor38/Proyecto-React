@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(224, 221, 221);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
