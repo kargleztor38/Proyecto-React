@@ -1,0 +1,27 @@
+.cartItem {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(198, 201, 204);
+	border-radius: 7px;
+	border-bottom: 1px solid black;
+}
+
+.header {
+	flex-basis: 15%;
+	margin: auto 0;
+	text-align: start;
+	padding-left: 15px;
+}
+
+.section {
+	display: flex;
+	align-items: center;
+	flex-basis: 25%;
+	gap: 5rem;
+}
+
+.subtotal {
+	flex-basis: 10%;
+	text-align: end;
+}

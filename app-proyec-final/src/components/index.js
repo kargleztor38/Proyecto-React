@@ -1,5 +1,8 @@
 export * from './Cart/Cart';
 export * from './CartItem/CartItem';
+export * from './CartWidget/CartWidget';
+export * from './CheckOut/CheckOut';
+export * from './CheckOutForm/CheckOutForm';
 export * from './Item/Item';
 export * from './ItemCount/ItemCount';
 export * from './ItemDetail/ItemDetail';
@@ -9,4 +12,3 @@ export * from './ItemListContainer/ItemListContainer';
 export * from './NavBar/NavBar';
 export * from './context/DateContext';
 export * from './context/DateProvider';
-export * from './index';

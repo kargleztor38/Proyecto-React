@@ -2,14 +2,14 @@ import { useState } from "react";
 import "./ItemCount.css";
 
 export const ItemCount = ({ onAdd }) => {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(1);
 
     const increment = () => {
-        if (count >= 0) { setCount(count + 1) }
+        if (count >= 1) { setCount(count + 1) }
     };
 
     const decrement = () => {
-        if (count > 0) { setCount(count - 1) }
+        if (count > 1) { setCount(count - 1) }
     };
 
     return (

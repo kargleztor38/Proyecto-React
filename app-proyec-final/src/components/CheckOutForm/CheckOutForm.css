@@ -1,0 +1,39 @@
+.checkStyle {
+	width: 50%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.checkInput {
+	width: 50%;
+	margin-bottom: 60px;
+	padding: 15px 15px;
+	text-align: start;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	font-size: 1.3rem;
+	background: linear-gradient(rgba(174, 224, 192, 0.042), rgba(13, 215, 87, 0.253));
+}
+
+.label {
+	margin-bottom: 10px;
+	font-size: 1.2rem;
+	font-weight: 800;
+}
+
+.formContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+	height: 80vh;
+}
+
+.header-h3 {
+	font-size: 30px;
+	margin-top: 50px;
+}

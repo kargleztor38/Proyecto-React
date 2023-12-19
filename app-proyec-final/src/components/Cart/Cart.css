@@ -1,0 +1,24 @@
+.carrito {
+	text-align: center;
+}
+
+.titulo {
+	margin-bottom: 20px;
+}
+
+.total {
+	margin: 20px;
+}
+
+.link {
+	display: inline-block;
+	margin: 30px auto;
+	background-color: rgb(39, 39, 39);
+	color: white;
+	border-radius: 8px;
+	padding: 15px 190px;
+}
+
+.btn {
+	font-size: 16px;
+}

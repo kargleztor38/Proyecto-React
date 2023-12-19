@@ -1,7 +1,9 @@
 import { NavLink } from "react-router-dom"
+import { CartWidget } from "../CartWidget/CartWidget"
 import  './NavBar.css'
 
 export const NavBar = () => {
+    
     return (
         <nav className="container navBar">
             <NavLink to='/'>
@@ -13,8 +15,8 @@ export const NavBar = () => {
                 <NavLink to='/category/Camisas' className='navLink'>Camisas</NavLink>
                 <NavLink to='/category/Cuadros' className='navLink'>Cuadros</NavLink>
             </div>
-            <NavLink className='LinkContainer'>
-                <i className="ri-shopping-cart-2-fill navLinkCart"><span>0</span></i>
+            <NavLink to='/cart' className='LinkContainer'>
+                <CartWidget />
             </NavLink>
         </nav>
     )
